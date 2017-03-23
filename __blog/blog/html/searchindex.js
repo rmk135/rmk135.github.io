@@ -1,1 +1,0 @@
-Search.setIndex({docnames:["2017/03/22/hello_world","master","pages/about"],envversion:50,filenames:["2017/03/22/hello_world.rst","master.rst","pages/about.rst"],objects:{},objnames:{},objtypes:{},terms:{about:1,hello:1,world:1},titles:["Hello world!","Sitemap","About"],titleterms:{about:2,hello:0,sitemap:1,world:0}})
