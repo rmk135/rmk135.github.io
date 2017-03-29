@@ -1,5 +1,5 @@
-About
-=====
+About Me
+========
 
 .. image:: /_static/images/avatar.jpeg
    :align: left
@@ -17,7 +17,7 @@ found that my strength area is to make complex things to be simpler - and now
 I keep moving that way. I hope that you will find information on my website 
 useful and interesting.
 
-My experience
+My Experience
 -------------
 
 + I am software engineer with 10+ years of commercial experience.
@@ -38,7 +38,7 @@ My experience
 + I read fundamental books about software engineering written by 
   Martin Fowler, Kent Beck, Steve McConnell and Robert C. Martin.
 
-My way
+My Way
 ------
 
 I've been fond of software engineering from my school years. I played a lot 
@@ -73,22 +73,19 @@ software engineer.
 Nowadays I keep working as a software engineer, love my work and feel 
 absolutely sure that I did a right choice.
 
-My profiles
+My Contacts
+-----------
+
+The best way to reach me is to write me an email. My email address is 
+rmogilatov@gmail.com.
+
+My Profiles
 -----------
 
 + GitHub - https://github.com/rmk135
 + Twitter - https://twitter.com/RmogilatovRoman
 + StackOverflow - http://stackoverflow.com/users/4224605/roman-mogilatov
 + LinkedIn - https://www.linkedin.com/in/roman-mogilatov-35a21854
-
-My projects
------------
-
-+ `Dependency Injector`_ - Dependency Injector is a dependency injection 
-  microframework for Python. It was designed to be unified, 
-  developer-friendly tool that helps to implement dependency injection design 
-  pattern in formal, pretty, Pythonic way.
-+ `Python VIMRC`_ - VIM Configuration for Python / Cython / C Development.
 
 Afterword
 ---------
@@ -104,5 +101,3 @@ Roman
 
 
 .. _ETS Labs: https://github.com/ets-labs
-.. _Dependency Injector: https://github.com/ets-labs/python-dependency-injector
-.. _Python VIMRC: https://github.com/ets-labs/python-vimrc
