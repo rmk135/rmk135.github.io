@@ -8,6 +8,16 @@ mine projects and contain links to the resources associated with them.
 Dependency Injector
 -------------------
 
+.. image:: https://img.shields.io/github/watchers/ets-labs/python-dependency-injector.svg?style=social&label=Watch
+   :target: https://github.com/ets-labs/python-dependency-injector
+   :alt: Github watchers
+.. image:: https://img.shields.io/github/stars/ets-labs/python-dependency-injector.svg?style=social&label=Star
+   :target: https://github.com/ets-labs/python-dependency-injector
+   :alt: Github stargazers
+.. image:: https://img.shields.io/github/forks/ets-labs/python-dependency-injector.svg?style=social&label=Fork
+   :target: https://github.com/ets-labs/python-dependency-injector
+   :alt: Github forks
+
 `Dependency Injector`_ is a dependency injection microframework for Python. 
 It was designed to be unified, developer-friendly tool that helps to 
 implement dependency injection design pattern in formal, pretty, Pythonic way.
@@ -25,6 +35,8 @@ Dependency Injector framework key features are:
 
 Dependency Injector containers and providers are implemented as C extension
 types using Cython.
+
+
 
 Brief example below is a simplified version of inversion of control 
 containters from one of the real-life applications. This example demonstrates
@@ -130,6 +142,17 @@ Links:
 
 Python VIMRC
 ------------
+
+.. image:: https://img.shields.io/github/watchers/ets-labs/python-vimrc.svg?style=social&label=Watch
+   :target: https://github.com/ets-labs/python-vimrc
+   :alt: Github watchers
+.. image:: https://img.shields.io/github/stars/ets-labs/python-vimrc.svg?style=social&label=Star
+   :target: https://github.com/ets-labs/python-vimrc
+   :alt: Github stargazers
+.. image:: https://img.shields.io/github/forks/ets-labs/python-vimrc.svg?style=social&label=Fork
+   :target: https://github.com/ets-labs/python-vimrc
+   :alt: Github forks
+
 `Python VIMRC`_ - VIM Configuration for Python / Cython / C Development.
 
 One screenshot is better than hundred of words:
