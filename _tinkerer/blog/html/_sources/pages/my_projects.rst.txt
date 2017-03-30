@@ -36,8 +36,6 @@ Dependency Injector framework key features are:
 Dependency Injector containers and providers are implemented as C extension
 types using Cython.
 
-
-
 Brief example below is a simplified version of inversion of control 
 containters from one of the real-life applications. This example demonstrates
 usage of `Dependency Injector`_ inversion of control containers & providers
