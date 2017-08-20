@@ -1,11 +1,11 @@
+.. _page_about_me:
+
 About Me
 ========
 
 .. image:: /_static/images/avatar.jpeg
    :align: left
-   :width: 50%
-
-Hello,
+   :width: 40%
 
 My name is Roman. I am software engineer and I have started my personal 
 website for having a chance to share some of my professional experience and 
