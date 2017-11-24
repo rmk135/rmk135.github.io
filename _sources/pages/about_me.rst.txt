@@ -3,16 +3,16 @@ About Me
 
 .. image:: /_static/images/avatar.jpeg
    :align: left
-   :width: 50%
+   :width: 30%
 
 Hello,
 
 My name is Roman. I am software engineer and I have started my personal 
 website for having a chance to share some of my professional experience and 
-thoughts about software engineering and team management. I like high quality 
-solutions, so my credo - "Done, when done well" - can describe me the best 
-way. I like to make things work smart and comprehensive way, at the same time 
-keeping certain level of simplicity, clearence and structuring. Once I have 
+thoughts about software engineering. I like high quality solutions, so my 
+credo - "Done, when done well" - can describe me the best way. I like to 
+make things work smart and comprehensive way, at the same time keeping 
+certain level of simplicity, clearence and structuring. Once I have 
 found that my strength area is to make complex things to be simpler - and now 
 I keep moving that way. I hope that you will find information on my website 
 useful and interesting.
@@ -23,7 +23,7 @@ My Experience
 + I am software engineer with 10+ years of commercial experience.
 + I specialise on engineering of web backend applications and reusable 
   software - libraries and frameworks.
-+ I manage small non-profitable organisation that specialises on engineering 
++ I lead small non-profitable organisation that specialises on engineering 
   of reusable open-source software (libraries and frameworks) for Python - 
   `ETS Labs`_.
 + I use Python as main programming language. My secondary programming 
