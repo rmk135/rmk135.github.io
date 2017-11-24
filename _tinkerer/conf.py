@@ -59,10 +59,10 @@ posts_per_page = 10
 slug_word_separator = '_'
 
 # Set to page under /pages (eg. "about" for "pages/about.html")
-landing_page = None
+landing_page = 'about_me'
 
 # Set to override the default name of the first page ("Home")
-first_page_title = None
+first_page_title = 'My Blog'
 
 # **************************************************************
 # Edit lines below to further customize Sphinx build
