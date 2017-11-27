@@ -36,7 +36,8 @@ My Experience
   interviews for software engineers according to corporate knowledge model 
   and standards.
 + I read fundamental books about software engineering written by 
-  Martin Fowler, Kent Beck, Steve McConnell and Robert C. Martin.
+  Martin Fowler, Kent Beck, Steve McConnell, Robert C. Martin and other 
+  experienced software engineers.
 
 My Way
 ------
