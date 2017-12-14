@@ -17,6 +17,8 @@ best practices, patterns, recommendations and methodologies.
 3. **Implementation Patterns** *by Kent Beck*.
 4. **The Pragmatic Programmer: From Journeyman to Master** *by Andrew Hunt, 
    David Thomas*.
+5. **Clean Code: A Handbook of Agile Software Craftsmanship** *by
+   Robert C. Martin*.
 
 Psychology
 ----------
