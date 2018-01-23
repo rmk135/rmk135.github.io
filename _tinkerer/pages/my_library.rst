@@ -26,6 +26,11 @@ Psychology
 1. **The 7 Habits of Highly Effective People: Powerful Lessons in Personal
    Change** *by Stephen R. Covey*.
 
+Politics, Government & Social Sciences
+--------------------------------------
+
+1. **The Art Of War** *by Sun Tzu*
+
 Health
 ------
 
