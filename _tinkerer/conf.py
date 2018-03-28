@@ -24,7 +24,7 @@ description = ('Blog about Python, software engineering best practices and '
 author = 'Roman Mogilatov'
 
 # Change this to your copyright string
-copyright = '2017, ' + author
+copyright = '2018, ' + author
 
 # Change this to your blog root URL (required for RSS feed)
 website = 'https://romanmogilatov.com/'
@@ -59,7 +59,7 @@ posts_per_page = 10
 slug_word_separator = '_'
 
 # Set to page under /pages (eg. "about" for "pages/about.html")
-landing_page = 'about_me'
+landing_page = None
 
 # Set to override the default name of the first page ("Home")
 first_page_title = 'My Blog'
