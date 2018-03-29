@@ -6,6 +6,8 @@ going to release a 2nd edition of one of his most famous books - Refactoring.
 
 I feel really excited about the news, here they are:
 
+.. more::
+
 1. **Less class-oriented** - more focus on functions.
 2. **Examples are in JavaScript** - because it is less class-oriented than 
    Java.
