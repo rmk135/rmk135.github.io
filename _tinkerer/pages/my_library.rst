@@ -26,10 +26,11 @@ Psychology
 1. **The 7 Habits of Highly Effective People: Powerful Lessons in Personal
    Change** *by Stephen R. Covey*.
 
-Politics, Government & Social Sciences
+Politics, Management & Social Sciences
 --------------------------------------
 
-1. **The Art Of War** *by Sun Tzu*
+1. **The Art Of War** *by Sun Tzu*.
+2. **Kaizen: The Key To Japan's Competitive Success** *by Masaaki Imai*.
 
 Health
 ------
