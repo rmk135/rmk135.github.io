@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2018/06/25/new_book_in_my_library_from_third_world_to_first_the_singapore_story_1965_2000_by_lee_kuan_yew
    2018/04/07/new_book_in_my_library_kaizen_by_masaaki_imai
    2018/03/28/refactoring_2nd_edition_by_martin_fowler
    pages/about_me
