@@ -31,6 +31,7 @@ Politics, Management & Social Sciences
 
 1. **The Art Of War** *by Sun Tzu*.
 2. **Kaizen: The Key To Japan's Competitive Success** *by Masaaki Imai*.
+3. **From Third World to First: The Singapore Story - 1965-2000** *by Lee Kuan Yew*.
 
 Health
 ------
