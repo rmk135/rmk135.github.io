@@ -99,9 +99,9 @@ implement dependency injection design pattern in formal, pretty, Pythonic way.</
 <p>Dependency Injector containers and providers are implemented as C extension
 types using Cython.</p>
 <p>Brief example below is a simplified version of inversion of control
-containters from one of the real-life applications. This example demonstrates
-usage of <a class="reference external" href="https://github.com/ets-labs/python-dependency-injector">Dependency Injector</a> inversion of control containers &amp; providers
-for specifying all application components and their dependencies beetween
+container from one of the real-life applications. This example demonstrates
+usage of <em>Dependency Injector</em> inversion of control container &amp; providers
+for specifying all application components and their dependencies between
 each other in one module. Besides other listed above advantages, it gives a
 great opportunity to control &amp; manage application’s structure in one place.</p>
 <div class="highlight-python"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;Example of dependency injection in Python.&quot;&quot;&quot;</span>
@@ -111,84 +111,91 @@ great opportunity to control &amp; manage application’s structure in one place
 
 <span class="kn">import</span> <span class="nn">boto3</span>
 
-<span class="kn">import</span> <span class="nn">example.main</span>
-<span class="kn">import</span> <span class="nn">example.services</span>
-
-<span class="kn">import</span> <span class="nn">dependency_injector.containers</span> <span class="kn">as</span> <span class="nn">containers</span>
-<span class="kn">import</span> <span class="nn">dependency_injector.providers</span> <span class="kn">as</span> <span class="nn">providers</span>
+<span class="kn">from</span> <span class="nn">dependency_injector</span> <span class="kn">import</span> <span class="n">containers</span><span class="p">,</span> <span class="n">providers</span>
+<span class="kn">from</span> <span class="nn">example</span> <span class="kn">import</span> <span class="n">services</span><span class="p">,</span> <span class="n">main</span>
 
 
-<span class="k">class</span> <span class="nc">Core</span><span class="p">(</span><span class="n">containers</span><span class="o">.</span><span class="n">DeclarativeContainer</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;IoC container of core component providers.&quot;&quot;&quot;</span>
+<span class="k">class</span> <span class="nc">IocContainer</span><span class="p">(</span><span class="n">containers</span><span class="o">.</span><span class="n">DeclarativeContainer</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Application IoC container.&quot;&quot;&quot;</span>
 
     <span class="n">config</span> <span class="o">=</span> <span class="n">providers</span><span class="o">.</span><span class="n">Configuration</span><span class="p">(</span><span class="s1">&#39;config&#39;</span><span class="p">)</span>
-
     <span class="n">logger</span> <span class="o">=</span> <span class="n">providers</span><span class="o">.</span><span class="n">Singleton</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">Logger</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;example&#39;</span><span class="p">)</span>
 
+    <span class="c1"># Gateways</span>
 
-<span class="k">class</span> <span class="nc">Gateways</span><span class="p">(</span><span class="n">containers</span><span class="o">.</span><span class="n">DeclarativeContainer</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;IoC container of gateway (API clients to remote services) providers.&quot;&quot;&quot;</span>
+    <span class="n">database_client</span> <span class="o">=</span> <span class="n">providers</span><span class="o">.</span><span class="n">Singleton</span><span class="p">(</span><span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">,</span> <span class="n">config</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">dsn</span><span class="p">)</span>
 
-    <span class="n">database</span> <span class="o">=</span> <span class="n">providers</span><span class="o">.</span><span class="n">Singleton</span><span class="p">(</span><span class="n">sqlite3</span><span class="o">.</span><span class="n">connect</span><span class="p">,</span> <span class="n">Core</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">database</span><span class="o">.</span><span class="n">dsn</span><span class="p">)</span>
-
-    <span class="n">s3</span> <span class="o">=</span> <span class="n">providers</span><span class="o">.</span><span class="n">Singleton</span><span class="p">(</span>
+    <span class="n">s3_client</span> <span class="o">=</span> <span class="n">providers</span><span class="o">.</span><span class="n">Singleton</span><span class="p">(</span>
         <span class="n">boto3</span><span class="o">.</span><span class="n">client</span><span class="p">,</span> <span class="s1">&#39;s3&#39;</span><span class="p">,</span>
-        <span class="n">aws_access_key_id</span><span class="o">=</span><span class="n">Core</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">aws</span><span class="o">.</span><span class="n">access_key_id</span><span class="p">,</span>
-        <span class="n">aws_secret_access_key</span><span class="o">=</span><span class="n">Core</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">aws</span><span class="o">.</span><span class="n">secret_access_key</span><span class="p">)</span>
+        <span class="n">aws_access_key_id</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">aws</span><span class="o">.</span><span class="n">access_key_id</span><span class="p">,</span>
+        <span class="n">aws_secret_access_key</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">aws</span><span class="o">.</span><span class="n">secret_access_key</span>
+    <span class="p">)</span>
 
+    <span class="c1"># Services</span>
 
-<span class="k">class</span> <span class="nc">Services</span><span class="p">(</span><span class="n">containers</span><span class="o">.</span><span class="n">DeclarativeContainer</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;IoC container of business service providers.&quot;&quot;&quot;</span>
+    <span class="n">users_service</span> <span class="o">=</span> <span class="n">providers</span><span class="o">.</span><span class="n">Factory</span><span class="p">(</span>
+        <span class="n">services</span><span class="o">.</span><span class="n">UsersService</span><span class="p">,</span>
+        <span class="n">db</span><span class="o">=</span><span class="n">database_client</span><span class="p">,</span>
+        <span class="n">logger</span><span class="o">=</span><span class="n">logger</span>
+    <span class="p">)</span>
 
-    <span class="n">users</span> <span class="o">=</span> <span class="n">providers</span><span class="o">.</span><span class="n">Factory</span><span class="p">(</span><span class="n">example</span><span class="o">.</span><span class="n">services</span><span class="o">.</span><span class="n">UsersService</span><span class="p">,</span>
-                              <span class="n">db</span><span class="o">=</span><span class="n">Gateways</span><span class="o">.</span><span class="n">database</span><span class="p">,</span>
-                              <span class="n">logger</span><span class="o">=</span><span class="n">Core</span><span class="o">.</span><span class="n">logger</span><span class="p">)</span>
+    <span class="n">auth_service</span> <span class="o">=</span> <span class="n">providers</span><span class="o">.</span><span class="n">Factory</span><span class="p">(</span>
+        <span class="n">services</span><span class="o">.</span><span class="n">AuthService</span><span class="p">,</span>
+        <span class="n">token_ttl</span><span class="o">=</span><span class="n">config</span><span class="o">.</span><span class="n">auth</span><span class="o">.</span><span class="n">token_ttl</span><span class="p">,</span>
+        <span class="n">db</span><span class="o">=</span><span class="n">database_client</span><span class="p">,</span>
+        <span class="n">logger</span><span class="o">=</span><span class="n">logger</span>
+    <span class="p">)</span>
 
-    <span class="n">auth</span> <span class="o">=</span> <span class="n">providers</span><span class="o">.</span><span class="n">Factory</span><span class="p">(</span><span class="n">example</span><span class="o">.</span><span class="n">services</span><span class="o">.</span><span class="n">AuthService</span><span class="p">,</span>
-                             <span class="n">db</span><span class="o">=</span><span class="n">Gateways</span><span class="o">.</span><span class="n">database</span><span class="p">,</span>
-                             <span class="n">logger</span><span class="o">=</span><span class="n">Core</span><span class="o">.</span><span class="n">logger</span><span class="p">,</span>
-                             <span class="n">token_ttl</span><span class="o">=</span><span class="n">Core</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">auth</span><span class="o">.</span><span class="n">token_ttl</span><span class="p">)</span>
+    <span class="n">photos_service</span> <span class="o">=</span> <span class="n">providers</span><span class="o">.</span><span class="n">Factory</span><span class="p">(</span>
+        <span class="n">services</span><span class="o">.</span><span class="n">PhotosService</span><span class="p">,</span>
+        <span class="n">db</span><span class="o">=</span><span class="n">database_client</span><span class="p">,</span>
+        <span class="n">s3</span><span class="o">=</span><span class="n">s3_client</span><span class="p">,</span>
+        <span class="n">logger</span><span class="o">=</span><span class="n">logger</span>
+    <span class="p">)</span>
 
-    <span class="n">photos</span> <span class="o">=</span> <span class="n">providers</span><span class="o">.</span><span class="n">Factory</span><span class="p">(</span><span class="n">example</span><span class="o">.</span><span class="n">services</span><span class="o">.</span><span class="n">PhotosService</span><span class="p">,</span>
-                               <span class="n">db</span><span class="o">=</span><span class="n">Gateways</span><span class="o">.</span><span class="n">database</span><span class="p">,</span>
-                               <span class="n">s3</span><span class="o">=</span><span class="n">Gateways</span><span class="o">.</span><span class="n">s3</span><span class="p">,</span>
-                               <span class="n">logger</span><span class="o">=</span><span class="n">Core</span><span class="o">.</span><span class="n">logger</span><span class="p">)</span>
+    <span class="c1"># Misc</span>
 
-
-<span class="k">class</span> <span class="nc">Application</span><span class="p">(</span><span class="n">containers</span><span class="o">.</span><span class="n">DeclarativeContainer</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;IoC container of application component providers.&quot;&quot;&quot;</span>
-
-    <span class="n">main</span> <span class="o">=</span> <span class="n">providers</span><span class="o">.</span><span class="n">Callable</span><span class="p">(</span><span class="n">example</span><span class="o">.</span><span class="n">main</span><span class="o">.</span><span class="n">main</span><span class="p">,</span>
-                              <span class="n">users_service</span><span class="o">=</span><span class="n">Services</span><span class="o">.</span><span class="n">users</span><span class="p">,</span>
-                              <span class="n">auth_service</span><span class="o">=</span><span class="n">Services</span><span class="o">.</span><span class="n">auth</span><span class="p">,</span>
-                              <span class="n">photos_service</span><span class="o">=</span><span class="n">Services</span><span class="o">.</span><span class="n">photos</span><span class="p">)</span>
+    <span class="n">main</span> <span class="o">=</span> <span class="n">providers</span><span class="o">.</span><span class="n">Callable</span><span class="p">(</span>
+        <span class="n">main</span><span class="o">.</span><span class="n">main</span><span class="p">,</span>
+        <span class="n">users_service</span><span class="o">=</span><span class="n">users_service</span><span class="p">,</span>
+        <span class="n">auth_service</span><span class="o">=</span><span class="n">auth_service</span><span class="p">,</span>
+        <span class="n">photos_service</span><span class="o">=</span><span class="n">photos_service</span>
+    <span class="p">)</span>
 </pre></div>
 </div>
 <p>Next example demonstrates run of example application defined above:</p>
-<div class="highlight-python"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;Run example application.&quot;&quot;&quot;</span>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;Run example of dependency injection in Python.&quot;&quot;&quot;</span>
 
 <span class="kn">import</span> <span class="nn">sys</span>
 <span class="kn">import</span> <span class="nn">logging</span>
 
-<span class="kn">from</span> <span class="nn">containers</span> <span class="kn">import</span> <span class="n">Core</span><span class="p">,</span> <span class="n">Application</span>
+<span class="kn">from</span> <span class="nn">container</span> <span class="kn">import</span> <span class="n">IocContainer</span>
 
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
-    <span class="c1"># Configure platform:</span>
-    <span class="n">Core</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">update</span><span class="p">({</span><span class="s1">&#39;database&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;dsn&#39;</span><span class="p">:</span> <span class="s1">&#39;:memory:&#39;</span><span class="p">},</span>
-                        <span class="s1">&#39;aws&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;access_key_id&#39;</span><span class="p">:</span> <span class="s1">&#39;KEY&#39;</span><span class="p">,</span>
-                                <span class="s1">&#39;secret_access_key&#39;</span><span class="p">:</span> <span class="s1">&#39;SECRET&#39;</span><span class="p">},</span>
-                        <span class="s1">&#39;auth&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;token_ttl&#39;</span><span class="p">:</span> <span class="mi">3600</span><span class="p">}})</span>
-    <span class="n">Core</span><span class="o">.</span><span class="n">logger</span><span class="p">()</span><span class="o">.</span><span class="n">addHandler</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">StreamHandler</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">))</span>
+    <span class="c1"># Configure container:</span>
+    <span class="n">container</span> <span class="o">=</span> <span class="n">IocContainer</span><span class="p">(</span>
+        <span class="n">config</span><span class="o">=</span><span class="p">{</span>
+            <span class="s1">&#39;database&#39;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s1">&#39;dsn&#39;</span><span class="p">:</span> <span class="s1">&#39;:memory:&#39;</span>
+            <span class="p">},</span>
+            <span class="s1">&#39;aws&#39;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s1">&#39;access_key_id&#39;</span><span class="p">:</span> <span class="s1">&#39;KEY&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;secret_access_key&#39;</span><span class="p">:</span> <span class="s1">&#39;SECRET&#39;</span>
+            <span class="p">},</span>
+            <span class="s1">&#39;auth&#39;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="s1">&#39;token_ttl&#39;</span><span class="p">:</span> <span class="mi">3600</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">)</span>
+    <span class="n">container</span><span class="o">.</span><span class="n">logger</span><span class="p">()</span><span class="o">.</span><span class="n">addHandler</span><span class="p">(</span><span class="n">logging</span><span class="o">.</span><span class="n">StreamHandler</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">stdout</span><span class="p">))</span>
 
     <span class="c1"># Run application:</span>
-    <span class="n">Application</span><span class="o">.</span><span class="n">main</span><span class="p">(</span><span class="n">uid</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span>
-                     <span class="n">password</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span>
-                     <span class="n">photo</span><span class="o">=</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>
+    <span class="n">container</span><span class="o">.</span><span class="n">main</span><span class="p">(</span><span class="o">*</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
 </pre></div>
 </div>
 <p>More extensive description of this example could be found
-<a class="reference external" href="http://python-dependency-injector.ets-labs.org/examples/services_miniapp.html">here</a>.</p>
+<a class="reference external" href="http://python-dependency-injector.ets-labs.org/examples/index.html">here</a>.</p>
 <p>Links:</p>
 <ul class="simple">
 <li>GitHub - <a class="reference external" href="https://github.com/ets-labs/python-dependency-injector">https://github.com/ets-labs/python-dependency-injector</a></li>
