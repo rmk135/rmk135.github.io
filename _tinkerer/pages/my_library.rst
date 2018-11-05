@@ -25,16 +25,16 @@ Psychology
 
 1. **The 7 Habits of Highly Effective People: Powerful Lessons in Personal
    Change** *by Stephen R. Covey*.
-2. **Screw It, Let's Do It: Lessons in Life and Business** *by Richard
-   Branson*.
 
-Politics, Management & Social Sciences
---------------------------------------
+Management, Business & Politics
+-------------------------------
 
 1. **The Art Of War** *by Sun Tzu*.
 2. **Kaizen: The Key To Japan's Competitive Success** *by Masaaki Imai*.
 3. **From Third World to First: The Singapore Story - 1965-2000** *by Lee
    Kuan Yew*.
+4. **Screw It, Let's Do It: Lessons in Life and Business** *by Richard
+   Branson*.
 
 Health
 ------
