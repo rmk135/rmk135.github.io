@@ -35,6 +35,7 @@ Management, Business & Politics
    Kuan Yew*.
 4. **Screw It, Let's Do It: Lessons in Life and Business** *by Richard
    Branson*.
+5. **The Prince** *by  Nicolo Machiavelli*.
 
 Health
 ------
