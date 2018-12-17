@@ -23,7 +23,7 @@ share my impression on this book.
 
 
 I found this book very similar to "The Art of War" by Sun Tzu in terms of
-it's style and soul. It's quite interesting if there is any single chance
+its style and soul. It's quite interesting if there is any single chance
 that Nicolo Machiavelli was inspired by Sun Tzu... Many of the points of view
 and recommendations are mostly the same (or very close to each other).
 
