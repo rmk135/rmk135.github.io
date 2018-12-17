@@ -36,6 +36,7 @@ Management, Business & Politics
 4. **Screw It, Let's Do It: Lessons in Life and Business** *by Richard
    Branson*.
 5. **The Prince** *by  Nicolo Machiavelli*.
+6. **Discourses on Livy** *by Nicolo Machiavelli*.
 
 Health
 ------
