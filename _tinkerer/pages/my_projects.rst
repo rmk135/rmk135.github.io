@@ -136,6 +136,7 @@ Next example demonstrates run of example application defined above:
 
         # Run application:
         container.main(*sys.argv[1:])
+
 More extensive description of this example could be found
 `here <http://python-dependency-injector.ets-labs.org/examples/index.html>`_.
 
@@ -171,7 +172,6 @@ Links:
 
 + GitHub - https://github.com/ets-labs/python-vimrc
 + YouTube - https://www.youtube.com/watch?v=7o9yiHO7gHM
-
 
 .. _Dependency Injector: https://github.com/ets-labs/python-dependency-injector
 .. _Python VIMRC: https://github.com/ets-labs/python-vimrc
