@@ -19,6 +19,7 @@ best practices, patterns, recommendations and methodologies.
    David Thomas*.
 5. **Clean Code: A Handbook of Agile Software Craftsmanship** *by
    Robert C. Martin*.
+6. **Building Microservices: Designing Fine-Grained Systems** *by Sam Newman*.
 
 Psychology
 ----------
