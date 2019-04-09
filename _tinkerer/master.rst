@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2019/04/08/new_book_in_my_library_building_microservices_designing_fine_grained_systems_by_sam_newman
    2018/12/17/new_book_in_my_library_discourses_on_livy_by_nicolo_machiavelli
    2018/11/20/new_book_in_my_library_the_prince_by_nicolo_machiavelli
    2018/11/05/new_book_in_my_library_screw_it_let_s_do_it_by_richard_branson
