@@ -22,6 +22,7 @@ best practices, patterns, recommendations and methodologies.
 6. **Building Microservices: Designing Fine-Grained Systems** *by Sam Newman*.
 7. **Design Patterns: Elements of Reusable Object-Oriented Software** *by GoF
    - Gang of Four - Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides*.
+8. **Refactoring: Improving the Design of Existing Code (2nd Edition)** *by Martin Fowler*.
 
 Psychology
 ----------
