@@ -21,7 +21,7 @@ about this book.
 --
 
 All love clean code, not all know how to get it. "Refactoring" - is a
-**live-and-career-changing book** that will show you the way to clean, understandable and
+**life-and-career-changing book** that will show you the way to clean, understandable and
 extensible code that other developer will thank you for.
 
 --
