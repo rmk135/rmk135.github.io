@@ -2,7 +2,7 @@ New book in My Library - Refactoring: Improving the Design of Existing Code (2nd
 ==========================================================================================================
 
 Being a huge fan of refactoring I couldn't miss 2nd edition of Martin Fowler's "Refactoring"
-from my radar.
+from my radar. Today this wonderful book took its deserved place on my bookshelf for read books.
 
 .. image:: https://images-na.ssl-images-amazon.com/images/I/41LBzpPXCOL._SX379_BO1,204,203,200_.jpg
    :align: left
@@ -19,6 +19,42 @@ about this book.
 .. more::
 
 --
+
+All love clean code, not all know how to get it. "Refactoring" - is a
+**live-and-career-changing book** that will show you the way to clean, understandable and
+extensible code that other developer will thank you for.
+
+--
+
+First what you will get is very well formed and described motivation for doing refactoring. I'm
+sure you have asked yourself next questions at least once:
+
+- "Why clean code is not a problem for performance and what's role of refactoring in it?"
+- "How can I make refactoring without being blamed by my colleagues for broken code?
+- And #1 "How to explain refactoring to my manager?"
+
+All the answers are just on the first pages.
+
+--
+
+Next thing that Martin will gift you is "Smells Catalog". You will get very well grounded
+explanation of "bad code". It's import to know thing cause you need to know where and when you
+should apply refactoring and even more important - when it's time to stop.
+
+--
+
+Rest of the book will will give dozens of refactoring etudes as a parts of "Refactorings
+Catalog". You will know some good ways to structure your logic and data using inheritance,
+composition and just common sense. I would recommend to put SUPER huge attention on "mechanics"
+sections. The trick is that if you will get the idea of how Martin does it - you will never have
+your code broken, all the mechanics is targeted to always have working version. Now, the beauty
+of "always working code" is that it drastically decrease the level of stress when you do
+refactoring (proven lots of times on own experience).
+
+--
+
+Don't think twice if you have not yet read it. Don't think twice even if you have read 1st
+edition - you will find bunch of interesting changes.
 
 
 .. author:: default
