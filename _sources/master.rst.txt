@@ -4,7 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
-   2019/08/01/new_book_in_my_library_domain_driven_design_tackling_complexity_in_the_heart_of_software_by_eric_evans
+   2019/08/02/new_book_in_my_library_domain_driven_design_tackling_complexity_in_the_heart_of_software_by_eric_evans
    2019/06/24/dependency_injector_500_stars_on_github
    2019/06/12/new_book_in_my_library_refactoring_improving_the_design_of_existing_code_2nd_edition_by_martin_fowler
    2019/05/22/new_book_in_my_library_design_patterns_elements_of_reusable_object_oriented_software_by_gof_gang_of_four
