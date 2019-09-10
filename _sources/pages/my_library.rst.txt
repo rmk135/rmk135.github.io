@@ -24,6 +24,8 @@ best practices, patterns, recommendations and methodologies.
    - Gang of Four - Erich Gamma, Richard Helm, Ralph Johnson, John Vlissides*.
 8. **Refactoring: Improving the Design of Existing Code (2nd Edition)** *by Martin Fowler*.
 9. **Domain-Driven Design: Tackling Complexity in the Heart of Software** *by Eric Evans*.
+10. **The Mythical Man-Month: Essays on Software Engineering, Anniversary Edition (2nd Edition)**
+    *by Brooks Jr., Frederick P*.
 
 Psychology
 ----------
