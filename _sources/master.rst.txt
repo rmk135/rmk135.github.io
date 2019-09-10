@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2019/09/10/new_book_in_my_library_the_mythical_man_month_essays_on_software_engineering_by_brooks_jr_frederick_p
    2019/08/02/new_book_in_my_library_domain_driven_design_tackling_complexity_in_the_heart_of_software_by_eric_evans
    2019/06/24/dependency_injector_500_stars_on_github
    2019/06/12/new_book_in_my_library_refactoring_improving_the_design_of_existing_code_2nd_edition_by_martin_fowler
