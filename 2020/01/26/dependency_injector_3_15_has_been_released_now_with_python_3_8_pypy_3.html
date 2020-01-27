@@ -15,7 +15,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <meta name="description" content="Blog about Python, software engineering best practices and life.">
         <meta name="viewport" content="width=device-width">
-        <title>New book in My Library - Discourses on Livy by Nicolo Machiavelli &mdash; Roman Mogilatov</title>
+        <title>Dependency Injector 3.15 has been released - Now with Python 3.8 &amp; PyPy 3 &mdash; Roman Mogilatov</title>
             <link rel="stylesheet" href="../../../_static/normalize.css" type="text/css">
             <link rel="stylesheet" href="../../../_static/sphinx.css" type="text/css">
             <link rel="stylesheet" href="../../../_static/main.css" type="text/css">
@@ -28,7 +28,7 @@
         <script>window.jQuery || document.write('<script src="../../../_static/vendor/jquery-1.8.2.min.js"><\/script>')</script>
         <script src="../../../_static/plugins.js"></script>
         <script src="../../../_static/main.js"></script>
-        <link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="New book in My Library - The Prince by Nicolo Machiavelli" href="../../11/20/new_book_in_my_library_the_prince_by_nicolo_machiavelli.html" /><link rel="prev" title="New book in My Library - Building Microservices: Designing Fine-Grained Systems by Sam Newman" href="../../../2019/04/08/new_book_in_my_library_building_microservices_designing_fine_grained_systems_by_sam_newman.html" /><link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.html" /><script type="text/javascript">
+        <link rel="search" title="Search" href="../../../search.html" /><link rel="next" title="New book in My Library - The Mythical Man-Month: Essays on Software Engineering by Brooks Jr., Frederick P" href="../../../2019/09/10/new_book_in_my_library_the_mythical_man_month_essays_on_software_engineering_by_brooks_jr_frederick_p.html" /><link rel="alternate" type="application/rss+xml" title="RSS" href="../../../rss.html" /><script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../../',
         VERSION:     '1.6.0',
@@ -72,42 +72,55 @@
                 </li>
               </ul>
           </nav><div class="main-container" role="main"><div class="main wrapper body clearfix"><article><div class="timestamp postmeta">
-            <span>December 17, 2018</span>
+            <span>January 26, 2020</span>
         </div>
-    <div class="section" id="new-book-in-my-library-discourses-on-livy-by-nicolo-machiavelli">
-<h1>New book in My Library - Discourses on Livy by Nicolo Machiavelli</h1>
-<p>The way “Discources on Livy” has got in my hands is fairly simple - I was
-very inspired by “The Prince” by Nicolo Machiavelli and decided to get his
-#2 (according to people reviews) book.</p>
-<a class="reference internal image-reference" href="https://images-na.ssl-images-amazon.com/images/I/417XDesB1iL.jpg"><img alt="https://images-na.ssl-images-amazon.com/images/I/417XDesB1iL.jpg" class="align-left" src="https://images-na.ssl-images-amazon.com/images/I/417XDesB1iL.jpg" style="width: 200px;" /></a>
-<p>Last weekend I’ve finished its reading and now I would like to share sort of
-its summary and what this book meant to me personally.</p>
-<div id="more"> </div><p>The book is very well structured. It consists of 3 parts where each part
-contains 40 - 50 not very big chapters. At the same time, each chapter is a
-complete micro story with a certain summary. Such structure made reading to
-be a pleasure cause reading of single chapter took 5 - 15 minutes and it was
-very comfortable from the prospective of time planning.</p>
-<p>I like simple, short and, at the same time, accurate descriptions that could
-be put to a single sentence. Making such description for “Discourages by
-Livy” I would say that it’s a great retrospective for all known to that time
-history (~1500 a.e.) on political, military and social aspects of life with
-keeping focus on Rome republic. It also quite tightly coupled with what Nicolo
-Machiavelli stated in his “The Prince”, but much deeper, as from my
-point of view. By the way, the book contains a lot of mentions and links to
-different parts of “The Prince”.</p>
-<p>Talking about what I’ve found beneficial for myself, I have mostly the same
-feelings as after reading “The Prince”. While I’m interested in politics,
-management and psychology, “Discourses on Livy” gave me a lot of “case study”
-knowledge.</p>
-<p>I had a chance to rethink different situations of my life through the prism
-of this book. It was really funny because very lot of times I caught myself
-projecting what I was reading to my own experience.</p>
-<p>Making a summary, I would definitely recommend to read this book to people
-who are interested in politics, management, business and psychology. I’m sure
-that it will be very interesting and useful.</p>
-<p>PS: I also would recommend to read “The Prince” first, before getting to
-“Discourses on Livy”. At least, for me such chaining these two book was just
-a perfect order for getting good understanding of described events.</p>
+    <div class="section" id="dependency-injector-3-15-has-been-released-now-with-python-3-8-pypy-3">
+<h1>Dependency Injector 3.15 has been released - Now with Python 3.8 &amp; PyPy 3</h1>
+<a class="reference external image-reference" href="/2020/01/26/dependency_injector_3_15_has_been_released_now_with_python_3_8_pypy_3.html"><img alt="https://avatars0.githubusercontent.com/u/11329744?s=400&amp;v=4" class="align-left" src="https://avatars0.githubusercontent.com/u/11329744?s=400&amp;v=4" style="width: 200px;" /></a>
+<p><a class="reference external" href="https://github.com/ets-labs/python-dependency-injector">Dependency Injector</a> 3.15 has been released. This release adds a support of Python 3.8 &amp; PyPy 3,
+as well as widens the list of compatible versions of <span class="docutils literal"><span class="pre">six</span></span> library with its 1.13.0 and 1.14.0
+releases.</p>
+<p>This release also is a beginning of soft and gentle wiping out of Python 2. In particular, all
+examples were rewritten to stop doing Python 2-ish inheritance from <span class="docutils literal"><span class="pre">object</span></span> and start calling
+parent methods in Python 3-ish way.</p>
+<div id="more"> </div><p>In addition to the already mentioned features some kind of general clean up was done - fixing of
+typos on the README and documentation pages, updating links, images, etc…</p>
+<p>New release is available on PyPi. Community is welcome to install, upgrade and update requirement
+files:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>pip install dependency-injector&gt;<span class="o">=</span><span class="m">3</span>.15
+
+pip install --upgrade dependency-injector&gt;<span class="o">=</span><span class="m">3</span>.15
+
+<span class="c1"># requirements.txt</span>
+dependency-injector&gt;<span class="o">=</span><span class="m">3</span>.15
+</pre></div>
+</div>
+<p>Full changelog of 3.15 release:</p>
+<ul class="simple">
+<li>Add Python 3.8 support.</li>
+<li>Add PyPy 3.6 support.</li>
+<li>Add support of six 1.14.0.</li>
+<li>Add support of six 1.13.0.</li>
+<li>Regenerate C sources using Cython 0.29.14.</li>
+<li>Remove Python 2-ish inheritance from <span class="docutils literal"><span class="pre">object</span></span> in example modules.</li>
+<li>Replace Python 2-ish <span class="docutils literal"><span class="pre">super(class,</span> <span class="pre">self).__init__()</span></span> calls with Python 3-ish
+<span class="docutils literal"><span class="pre">super().__init__()</span></span> in example modules.</li>
+<li>Fix doc block errors in example modules, including related to PEP257-compliance.</li>
+<li>Clean up tox.ini file.</li>
+<li>Fix a couple of typos in the README.</li>
+<li>Fix a couple of types in the diagram of “Engines-Cars” example.</li>
+<li>Fix a typo in the installation instructions on the README page and in the documentation.</li>
+<li>Fix a typo in the link to the PyPi on the “Dependency Injection in Python” documentation page.</li>
+<li>Fix a couple of typos in the list of key features on the “Key Features” and index documentation
+pages.</li>
+<li>Update a link to the PyPi page on a couple of documentation pages.</li>
+<li>Update a link to the PyPi page on the README page.</li>
+</ul>
+<p>More:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://github.com/ets-labs/python-dependency-injector">https://github.com/ets-labs/python-dependency-injector</a></li>
+<li><a class="reference external" href="http://python-dependency-injector.ets-labs.org">http://python-dependency-injector.ets-labs.org</a></li>
+</ul>
 </div>
 
     <div class="postmeta">
@@ -117,12 +130,12 @@ a perfect order for getting good understanding of described events.</p>
         
         
         </div><ul class="related clearfix">
-            <li class="left"> &laquo; <a href="../../../2019/04/08/new_book_in_my_library_building_microservices_designing_fine_grained_systems_by_sam_newman.html">New book in My Library - Building Microservices: Designing Fine-Grained Systems by Sam Newman</a></li>
-            <li class="right"><a href="../../11/20/new_book_in_my_library_the_prince_by_nicolo_machiavelli.html">New book in My Library - The Prince by Nicolo Machiavelli</a> &raquo; </li>
-        </ul><div id="disqus_thread"></div><script type="text/javascript">    var disqus_shortname = "romanmogilatov";    var disqus_identifier = "2018/12/17/new_book_in_my_library_discourses_on_livy_by_nicolo_machiavelli";    disqus_thread();</script><noscript>Please enable JavaScript to view the    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></article><aside class="sidebar"><section><div class="widget">
+            <li class="left"></li>
+            <li class="right"><a href="../../../2019/09/10/new_book_in_my_library_the_mythical_man_month_essays_on_software_engineering_by_brooks_jr_frederick_p.html">New book in My Library - The Mythical Man-Month: Essays on Software Engineering by Brooks Jr., Frederick P</a> &raquo; </li>
+        </ul><div id="disqus_thread"></div><script type="text/javascript">    var disqus_shortname = "romanmogilatov";    var disqus_identifier = "2020/01/26/dependency_injector_3_15_has_been_released_now_with_python_3_8_pypy_3";    disqus_thread();</script><noscript>Please enable JavaScript to view the    <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></article><aside class="sidebar"><section><div class="widget">
     <h1>Recent Posts</h1>
     <ul><li>
-            <a href="../../../2020/01/26/dependency_injector_3_15_has_been_released_now_with_python_3_8_pypy_3.html">Dependency Injector 3.15 has been released - Now with Python 3.8 & PyPy 3</a>
+            <a href="#">Dependency Injector 3.15 has been released - Now with Python 3.8 & PyPy 3</a>
         </li><li>
             <a href="../../../2019/09/10/new_book_in_my_library_the_mythical_man_month_essays_on_software_engineering_by_brooks_jr_frederick_p.html">New book in My Library - The Mythical Man-Month: Essays on Software Engineering by Brooks Jr., Frederick P</a>
         </li><li>
@@ -136,11 +149,11 @@ a perfect order for getting good understanding of described events.</p>
         </li><li>
             <a href="../../../2019/04/08/new_book_in_my_library_building_microservices_designing_fine_grained_systems_by_sam_newman.html">New book in My Library - Building Microservices: Designing Fine-Grained Systems by Sam Newman</a>
         </li><li>
-            <a href="#">New book in My Library - Discourses on Livy by Nicolo Machiavelli</a>
+            <a href="../../../2018/12/17/new_book_in_my_library_discourses_on_livy_by_nicolo_machiavelli.html">New book in My Library - Discourses on Livy by Nicolo Machiavelli</a>
         </li><li>
-            <a href="../../11/20/new_book_in_my_library_the_prince_by_nicolo_machiavelli.html">New book in My Library - The Prince by Nicolo Machiavelli</a>
+            <a href="../../../2018/11/20/new_book_in_my_library_the_prince_by_nicolo_machiavelli.html">New book in My Library - The Prince by Nicolo Machiavelli</a>
         </li><li>
-            <a href="../../11/05/new_book_in_my_library_screw_it_let_s_do_it_by_richard_branson.html">New book in My Library - Screw It, Let’s Do It by Richard Branson</a>
+            <a href="../../../2018/11/05/new_book_in_my_library_screw_it_let_s_do_it_by_richard_branson.html">New book in My Library - Screw It, Let’s Do It by Richard Branson</a>
         </li></ul>
 </div>
 </section><section><div class="widget" id="searchbox" role="search">

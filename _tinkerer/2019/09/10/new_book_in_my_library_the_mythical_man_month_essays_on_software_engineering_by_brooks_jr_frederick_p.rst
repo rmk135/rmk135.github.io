@@ -84,3 +84,5 @@ read it. It would be super useful for both software project managers and softwar
 .. categories:: none
 .. tags:: none
 .. comments::
+
+.. _Dependency Injector: https://github.com/ets-labs/python-dependency-injector
