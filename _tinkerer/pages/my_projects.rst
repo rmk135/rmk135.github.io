@@ -19,30 +19,36 @@ Dependency Injector
    :target: https://github.com/ets-labs/python-dependency-injector
    :alt: Github forks
 
-`Dependency Injector`_ is a dependency injection microframework for Python. 
-It was designed to be unified, developer-friendly tool that helps to 
-implement dependency injection design pattern in formal, pretty, Pythonic way.
+.. image:: https://avatars0.githubusercontent.com/u/11329744?s=400&v=4
+   :align: left
+   :width: 160
+   :target: https://github.com/ets-labs/python-dependency-injector
 
-Dependency Injector framework key features are:
+`Dependency Injector`_ is a dependency injection microframework for Python.
+It was designed to be a unified and developer-friendly tool that helps
+implement a dependency injection design pattern in a formal, pretty, and
+Pythonic way.
 
-+ Easy, smart, pythonic style.
-+ Obvious, clear structure.
+The key features of the *Dependency Injector* framework are:
+
++ Easy, smart, and pythonic style.
++ Obvious and clear structure.
 + Extensibility and flexibility.
 + High performance.
 + Memory efficiency.
 + Thread safety.
-+ Documentation.
-+ Semantic versioning.
++ Documented.
++ Semantically versioned.
 
-Dependency Injector containers and providers are implemented as C extension
+*Dependency Injector* containers and providers are implemented as C extension
 types using Cython.
 
-Brief example below is a simplified version of inversion of control
-container from one of the real-life applications. This example demonstrates
-usage of *Dependency Injector* inversion of control container & providers
-for specifying all application components and their dependencies between
-each other in one module. Besides other listed above advantages, it gives a
-great opportunity to control & manage application's structure in one place.
+The brief example below is a simplified version of inversion of control
+containers from a real-life application. The example demonstrates the usage
+of *Dependency Injector* inversion of control container and  providers for
+specifying application components and their dependencies on each other in one
+module. Besides other previously mentioned advantages, it shows a great
+opportunity to control and manage application's structure in one place.
 
 .. code-block:: python
 
@@ -143,7 +149,7 @@ More extensive description of this example could be found
 Links:
 
 + GitHub - https://github.com/ets-labs/python-dependency-injector
-+ PyPI - https://pypi.python.org/pypi/dependency_injector/
++ PyPI - https://pypi.org/project/dependency-injector/
 + Documentation - http://python-dependency-injector.ets-labs.org/
 
 Python VIMRC
