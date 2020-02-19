@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2020/02/18/dependency_injector_1_million_downloads
    2020/01/26/dependency_injector_3_15_has_been_released_now_with_python_3_8_pypy_3
    2019/09/10/new_book_in_my_library_the_mythical_man_month_essays_on_software_engineering_by_brooks_jr_frederick_p
    2019/08/02/new_book_in_my_library_domain_driven_design_tackling_complexity_in_the_heart_of_software_by_eric_evans
