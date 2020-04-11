@@ -32,6 +32,8 @@ Psychology
 
 1. **The 7 Habits of Highly Effective People: Powerful Lessons in Personal
    Change** *by Stephen R. Covey*.
+2. **Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts**
+   *by Annie Duke*.
 
 Management, Business & Politics
 -------------------------------
