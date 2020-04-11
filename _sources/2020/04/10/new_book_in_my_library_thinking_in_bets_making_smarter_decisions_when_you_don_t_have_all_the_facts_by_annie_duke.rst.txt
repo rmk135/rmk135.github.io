@@ -1,7 +1,7 @@
 New book in My Library - Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts by Annie Duke
 ===================================================================================================================
 
-Life is a Poker, not Chess.
+Life is Poker, not Chess.
 
 My library has been replenished with a new great finding - Thinking in Bets by Annie Duke.
 
