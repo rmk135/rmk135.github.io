@@ -8,6 +8,7 @@ My library has been replenished with a new great finding - Thinking in Bets by A
 .. image:: https://images-na.ssl-images-amazon.com/images/I/41iErnLQEWL._SX329_BO1,204,203,200_.jpg
    :align: left
    :width: 200
+   :target: /2020/04/10/new_book_in_my_library_thinking_in_bets_making_smarter_decisions_when_you_don_t_have_all_the_facts_by_annie_duke.html
 
 Annie Duke is an author and experienced corporate speaker and consultant on the behavior of
 decision making.
