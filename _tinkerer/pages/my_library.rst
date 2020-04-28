@@ -47,6 +47,10 @@ Management, Business & Politics
 5. **The Prince** *by  Nicolo Machiavelli*.
 6. **Discourses on Livy** *by Nicolo Machiavelli*.
 
+In Russian
+
+1. **Пиши, сокращай** *Максим Ильяхов, Людмила Сарычева*.
+
 Health
 ------
 
