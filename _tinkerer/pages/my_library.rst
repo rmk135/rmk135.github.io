@@ -55,3 +55,10 @@ Health
 ------
 
 1. **Allen Carr's Easy Way to Stop Smoking** *by Allen Carr*.
+
+History
+-------
+
+In Russian
+
+1. **Воспоминания о войне** *Николай Николаевич Никулин*
