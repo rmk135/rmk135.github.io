@@ -26,6 +26,8 @@ best practices, patterns, recommendations and methodologies.
 9. **Domain-Driven Design: Tackling Complexity in the Heart of Software** *by Eric Evans*.
 10. **The Mythical Man-Month: Essays on Software Engineering, Anniversary Edition (2nd Edition)**
     *by Brooks Jr., Frederick P*.
+11. **The Innovation Algorithm: TRIZ, systematic innovation and technical creativity
+    (1st Edition)** *by Genrich Altshuller*.
 
 Psychology
 ----------
