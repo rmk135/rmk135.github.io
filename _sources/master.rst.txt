@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2020/06/29/dependency_injector_3_19_has_been_released_new_selector_provider
    2020/06/14/dependency_injector_3_16_has_been_released_new_list_provider
    2020/04/10/new_book_in_my_library_thinking_in_bets_making_smarter_decisions_when_you_don_t_have_all_the_facts_by_annie_duke
    2020/02/18/dependency_injector_1_million_downloads
