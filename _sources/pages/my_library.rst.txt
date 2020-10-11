@@ -48,6 +48,11 @@ Management, Business & Politics
    Branson*.
 5. **The Prince** *by  Nicolo Machiavelli*.
 6. **Discourses on Livy** *by Nicolo Machiavelli*.
+7. **Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets (Incerto)** *by Nassim Nicholas Taleb*.
+8. **The Black Swan: The Impact of the Highly Improbable (Incerto)** *by Nassim Nicholas Taleb*.
+9. **The Bed of Procrustes: Philosophical and Practical Aphorisms (Incerto)** *by Nassim Nicholas Taleb*.
+10. **Antifragile: Things That Gain from Disorder (Incerto)** *by Nassim Nicholas Taleb*.
+11. **Skin in the Game: Hidden Asymmetries in Daily Life (Incerto)** *by Nassim Nicholas Taleb*.
 
 In Russian
 
