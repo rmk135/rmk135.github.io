@@ -53,6 +53,7 @@ Management, Business & Politics
 9. **The Bed of Procrustes: Philosophical and Practical Aphorisms (Incerto)** *by Nassim Nicholas Taleb*.
 10. **Antifragile: Things That Gain from Disorder (Incerto)** *by Nassim Nicholas Taleb*.
 11. **Skin in the Game: Hidden Asymmetries in Daily Life (Incerto)** *by Nassim Nicholas Taleb*.
+12. **Everything Is Negotiable: How to Get the Best Deal Every Time** *by Gavin Kennedy*.
 
 In Russian
 
