@@ -28,6 +28,7 @@ best practices, patterns, recommendations and methodologies.
     *by Brooks Jr., Frederick P*.
 11. **The Innovation Algorithm: TRIZ, systematic innovation and technical creativity
     (1st Edition)** *by Genrich Altshuller*.
+12. **Software Estimation: Demystifying the Black Art** *by Steve McConnell*.
 
 Psychology
 ----------

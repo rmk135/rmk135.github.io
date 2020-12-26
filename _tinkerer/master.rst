@@ -4,6 +4,7 @@ Sitemap
 .. toctree::
    :maxdepth: 1
 
+   2020/12/26/demystifying_the_black_art_new_book_in_my_library
    2020/07/16/who_is_john_galt_new_book_in_my_library
    2020/06/29/dependency_injector_3_19_has_been_released_new_selector_provider
    2020/06/14/dependency_injector_3_16_has_been_released_new_list_provider
