@@ -55,6 +55,7 @@ Management, Business & Politics
 10. **Antifragile: Things That Gain from Disorder (Incerto)** *by Nassim Nicholas Taleb*.
 11. **Skin in the Game: Hidden Asymmetries in Daily Life (Incerto)** *by Nassim Nicholas Taleb*.
 12. **Everything Is Negotiable: How to Get the Best Deal Every Time** *by Gavin Kennedy*.
+13. **Deep Work: Rules for Focused Success in a Distracted World** *by Cal Newport*.
 
 In Russian
 
