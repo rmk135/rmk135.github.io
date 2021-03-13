@@ -69,6 +69,8 @@ Health
 History
 -------
 
+1. **A People's History of the United States** *by Howard Zinn*.
+
 In Russian
 
 1. **Воспоминания о войне** *Николай Николаевич Никулин*.
