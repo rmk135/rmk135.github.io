@@ -92,7 +92,7 @@ contains many new features and optimizations.</p>
     <span class="n">z</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.0</span>
 
 <span class="n">p</span> <span class="o">=</span> <span class="n">Point</span><span class="p">(</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>   <span class="c1"># produces &quot;Point(x=1.5, y=2.5, z=0.0)&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>   <span class="c1"># produces &quot;Point(x=1.5, y=2.5, z=0.0)&quot;</span>
 </pre></div>
 </div>
 <p>I feel curious and happy at the same time because some time ago I had an idea
@@ -137,18 +137,18 @@ improve management of contexts in asynchronous programming:</p>
     <span class="c1"># without passing it explicitly to this function.</span>
 
     <span class="n">client_addr</span> <span class="o">=</span> <span class="n">client_addr_var</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-    <span class="k">return</span> <span class="n">f</span><span class="s1">&#39;Good bye, client @ {client_addr}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">encode</span><span class="p">()</span>
+    <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;Good bye, client @ </span><span class="si">{</span><span class="n">client_addr</span><span class="si">}</span><span class="se">\n</span><span class="s1">&#39;</span><span class="o">.</span><span class="n">encode</span><span class="p">()</span>
 
-<span class="n">async</span> <span class="k">def</span> <span class="nf">handle_request</span><span class="p">(</span><span class="n">reader</span><span class="p">,</span> <span class="n">writer</span><span class="p">):</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">handle_request</span><span class="p">(</span><span class="n">reader</span><span class="p">,</span> <span class="n">writer</span><span class="p">):</span>
     <span class="n">addr</span> <span class="o">=</span> <span class="n">writer</span><span class="o">.</span><span class="n">transport</span><span class="o">.</span><span class="n">get_extra_info</span><span class="p">(</span><span class="s1">&#39;socket&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">getpeername</span><span class="p">()</span>
     <span class="n">client_addr_var</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="n">addr</span><span class="p">)</span>
 
     <span class="c1"># In any code that we call is now possible to get</span>
     <span class="c1"># client&#39;s address by calling &#39;client_addr_var.get()&#39;.</span>
 
-    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
-        <span class="n">line</span> <span class="o">=</span> <span class="n">await</span> <span class="n">reader</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
-        <span class="k">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+    <span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="n">line</span> <span class="o">=</span> <span class="k">await</span> <span class="n">reader</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
         <span class="k">if</span> <span class="ow">not</span> <span class="n">line</span><span class="o">.</span><span class="n">strip</span><span class="p">():</span>
             <span class="k">break</span>
         <span class="n">writer</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
@@ -156,12 +156,12 @@ improve management of contexts in asynchronous programming:</p>
     <span class="n">writer</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">render_goodbye</span><span class="p">())</span>
     <span class="n">writer</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 
-<span class="n">async</span> <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
-    <span class="n">srv</span> <span class="o">=</span> <span class="n">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">start_server</span><span class="p">(</span>
+<span class="k">async</span> <span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="n">srv</span> <span class="o">=</span> <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">start_server</span><span class="p">(</span>
         <span class="n">handle_request</span><span class="p">,</span> <span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span> <span class="mi">8081</span><span class="p">)</span>
 
-    <span class="n">async</span> <span class="k">with</span> <span class="n">srv</span><span class="p">:</span>
-        <span class="n">await</span> <span class="n">srv</span><span class="o">.</span><span class="n">serve_forever</span><span class="p">()</span>
+    <span class="k">async</span> <span class="k">with</span> <span class="n">srv</span><span class="p">:</span>
+        <span class="k">await</span> <span class="n">srv</span><span class="o">.</span><span class="n">serve_forever</span><span class="p">()</span>
 
 <span class="n">asyncio</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">main</span><span class="p">())</span>
 

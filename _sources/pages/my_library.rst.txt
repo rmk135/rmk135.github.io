@@ -70,6 +70,7 @@ History
 -------
 
 1. **A People's History of the United States** *by Howard Zinn*.
+2. **Sapiens: A Brief History of Humankind** *by Yuval Noah Harari*.
 
 In Russian
 
