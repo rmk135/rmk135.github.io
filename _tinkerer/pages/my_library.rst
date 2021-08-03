@@ -29,6 +29,7 @@ best practices, patterns, recommendations and methodologies.
 11. **The Innovation Algorithm: TRIZ, systematic innovation and technical creativity
     (1st Edition)** *by Genrich Altshuller*.
 12. **Software Estimation: Demystifying the Black Art** *by Steve McConnell*.
+13. **Peopleware: Productive Projects and Teams (3rd Edition)** *by Tom DeMarco, Tim Lister*.
 
 Psychology
 ----------
