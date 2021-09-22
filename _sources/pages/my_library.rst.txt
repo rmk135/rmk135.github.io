@@ -66,6 +66,9 @@ Health
 ------
 
 1. **Allen Carr's Easy Way to Stop Smoking** *by Allen Carr*.
+2. **Allen Carr's Easy Way to Control Alcohol** *by Allen Carr*.
+3. **Allen Carr's Easy Way to Lose Weight** *by Allen Carr*.
+
 
 History
 -------
