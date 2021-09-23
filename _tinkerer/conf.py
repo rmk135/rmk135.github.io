@@ -24,7 +24,7 @@ description = ('Blog about Python, software engineering best practices and '
 author = 'Roman Mogylatov'
 
 # Change this to your copyright string
-copyright = '2018, ' + author
+copyright = '2021, ' + author
 
 # Change this to your blog root URL (required for RSS feed)
 website = 'https://romanmogilatov.com/'
