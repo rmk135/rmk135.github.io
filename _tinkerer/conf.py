@@ -11,7 +11,7 @@ import tinkerer.paths
 # **************************************************************
 
 # Change this to the name of your blog
-project = 'Roman Mogilatov'
+project = 'Roman Mogylatov'
 
 # Change this to the tagline of your blog
 tagline = 'Done, when done well.'
@@ -21,7 +21,7 @@ description = ('Blog about Python, software engineering best practices and '
                'life.')
 
 # Change this to your name
-author = 'Roman Mogilatov'
+author = 'Roman Mogylatov'
 
 # Change this to your copyright string
 copyright = '2018, ' + author
