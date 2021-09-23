@@ -27,7 +27,7 @@ author = 'Roman Mogylatov'
 copyright = '2021, ' + author
 
 # Change this to your blog root URL (required for RSS feed)
-website = 'https://romanmogilatov.com/'
+website = 'https://romanmogylatov.com/'
 
 # **************************************************************
 # More tweaks you can do
