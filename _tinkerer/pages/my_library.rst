@@ -76,6 +76,7 @@ History
 1. **A People's History of the United States** *by Howard Zinn*.
 2. **Sapiens: A Brief History of Humankind** *by Yuval Noah Harari*.
 3. **Homo Deus: A Brief History of Tomorrow** *by Yuval Noah Harari*.
+4. **21 Lessons for the 21st Century** *by Yuval Noah Harari*.
 
 In Russian
 
