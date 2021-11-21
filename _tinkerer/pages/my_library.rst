@@ -30,6 +30,7 @@ best practices, patterns, recommendations and methodologies.
     (1st Edition)** *by Genrich Altshuller*.
 12. **Software Estimation: Demystifying the Black Art** *by Steve McConnell*.
 13. **Peopleware: Productive Projects and Teams (3rd Edition)** *by Tom DeMarco, Tim Lister*.
+14. **Team Topologies: Organizing Business and Technology Teams for Fast Flow** *by Matthew Skelton, Manuel Pais*.
 
 Psychology
 ----------
