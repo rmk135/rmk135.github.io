@@ -39,16 +39,16 @@ Psychology
    Change** *by Stephen R. Covey*.
 2. **Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts**
    *by Annie Duke*.
+3. **Thinking, Fast and Slow** *by Daniel Kahneman*.
 
-Management, Business & Politics
--------------------------------
+Management, Business, and Politics
+----------------------------------
 
 1. **The Art Of War** *by Sun Tzu*.
 2. **Kaizen: The Key To Japan's Competitive Success** *by Masaaki Imai*.
 3. **From Third World to First: The Singapore Story - 1965-2000** *by Lee
    Kuan Yew*.
-4. **Screw It, Let's Do It: Lessons in Life and Business** *by Richard
-   Branson*.
+4. **Screw It, Let's Do It: Lessons in Life and Business** *by Richard Branson*.
 5. **The Prince** *by  Nicolo Machiavelli*.
 6. **Discourses on Livy** *by Nicolo Machiavelli*.
 7. **Fooled by Randomness: The Hidden Role of Chance in Life and in the Markets (Incerto)** *by Nassim Nicholas Taleb*.
